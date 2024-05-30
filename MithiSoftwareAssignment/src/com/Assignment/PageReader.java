@@ -28,7 +28,7 @@ public class PageReader implements PageMethods{
 		    StringBuilder uniqueStringBuilder = new StringBuilder();
 
 		    for (String word : words) {
-		        if (!excludedSet.contains(word)&& !isNumeric(word)) {
+		        if (!excludedSet.contains(word)&& !isNumeric(word) && word.length()>1) {
 		            uniqueStringBuilder.append(word).append(" ");
 		        }
 		    }
